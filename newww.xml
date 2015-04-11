@@ -1,38 +1,26 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="348" inline="true" x="-903" y="-509">
-    <value name="TIMES">
-      <block type="math_number" id="355">
-        <field name="NUM">4</field>
+  <block type="controls_whileUntil" id="372" inline="false" x="-720" y="-455">
+    <field name="MODE">WHILE</field>
+    <value name="NUMBER">
+      <block type="logic_compare" id="379" inline="true">
+        <field name="OP">LT</field>
+        <value name="A">
+          <block type="math_number" id="393">
+            <field name="NUM">5000</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="sensor_object" id="386">
+            <field name="OBJECT">REAR</field>
+          </block>
+        </value>
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_forward" id="181">
-        <next>
-          <block type="robot_delay" id="183" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="190">
-                <field name="NUM">5000</field>
-              </block>
-            </value>
-            <next>
-              <block type="movement_right" id="210">
-                <next>
-                  <block type="robot_delay" id="279" inline="true">
-                    <value name="DELAY">
-                      <block type="math_number" id="286">
-                        <field name="NUM">1500</field>
-                      </block>
-                    </value>
-                  </block>
-                </next>
-              </block>
-            </next>
-          </block>
-        </next>
-      </block>
+      <block type="movement_reverse" id="413"></block>
     </statement>
     <next>
-      <block type="movement_stop" id="365"></block>
+      <block type="movement_stop" id="403"></block>
     </next>
   </block>
 </xml>

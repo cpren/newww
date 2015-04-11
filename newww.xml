@@ -5,13 +5,13 @@
       <block type="logic_compare" id="379" inline="true">
         <field name="OP">LT</field>
         <value name="A">
-          <block type="math_number" id="393">
-            <field name="NUM">5000</field>
+          <block type="sensor_object" id="386">
+            <field name="OBJECT">REAR</field>
           </block>
         </value>
         <value name="B">
-          <block type="sensor_object" id="386">
-            <field name="OBJECT">REAR</field>
+          <block type="math_number" id="393">
+            <field name="NUM">5</field>
           </block>
         </value>
       </block>
